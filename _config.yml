@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: Rexder Zone
+subtitle: 凡人应该思考凡人的思想而不是不朽的思想
+description: Creating and Reading
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: Rexder
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://rexder-blog.vercel.app
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

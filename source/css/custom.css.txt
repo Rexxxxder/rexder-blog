@@ -1,0 +1,119 @@
+.category-subnav {
+  margin: 1rem 0 1.5rem;
+  padding: 0.5rem 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+.subnav-label {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+.subnav-link {
+  margin-right: 1rem;
+  color: #4a4a5a;
+  text-decoration: none;
+}
+.subnav-link:hover {
+  color: #b45f2b;
+  text-decoration: underline;
+}
+.subnav-link .count {
+  font-size: 0.8rem;
+  color: #8e8e9e;
+  margin-left: 0.2rem;
+}
+/* ===== 白底 + 粉蓝撞色主题 ===== */
+
+/* 1. 全局背景改为白色 */
+body {
+  background-color: #ffffff !important;
+}
+
+/* 2. 主色调：粉色 #ff6699 和 蓝色 #00bbd9 */
+/* 粉色用于悬停、强调；蓝色用于活跃元素 */
+
+/* 导航栏链接悬停 */
+nav a:hover,
+.nav-link:hover {
+  color: #ff6699 !important;
+  border-bottom-color: #ff6699 !important;
+}
+
+/* 当前激活的菜单项 */
+nav a.active,
+.nav-link.active {
+  color: #00bbd9 !important;
+  border-bottom-color: #00bbd9 !important;
+}
+
+/* 文章标题链接悬停 */
+.post-title-link:hover,
+.article-title a:hover {
+  color: #ff6699 !important;
+}
+
+/* 普通链接 */
+a {
+  color: #00bbd9;
+}
+a:hover {
+  color: #ff6699;
+}
+
+/* 按钮（如“阅读全文”） */
+.btn-more,
+.button--primary {
+  background-color: #00bbd9 !important;
+  border-color: #00bbd9 !important;
+}
+.btn-more:hover,
+.button--primary:hover {
+  background-color: #ff6699 !important;
+  border-color: #ff6699 !important;
+}
+
+/* 分页器（页码） */
+.pagination .current,
+.pagination .page-number.current {
+  background: #00bbd9 !important;
+  border-color: #00bbd9 !important;
+}
+.pagination a:hover {
+  background: #ff6699 !important;
+  border-color: #ff6699 !important;
+}
+
+/* 选中文本的背景色（粉色） */
+::selection {
+  background-color: #ff6699;
+  color: #fff;
+}
+::-moz-selection {
+  background-color: #ff6699;
+  color: #fff;
+}
+
+/* 滚动条（仅 Chrome/Edge） */
+::-webkit-scrollbar-thumb {
+  background-color: #00bbd9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff6699;
+}
+
+/* 代码块的前景色和背景（微调） */
+.hljs {
+  color: #ff6699 !important;
+  background: #f9f9f9 !important;
+}
+
+/* 引用块左侧竖条 */
+blockquote {
+  border-left-color: #00bbd9 !important;
+}
+
+/* 页脚链接 */
+.footer a:hover {
+  color: #ff6699 !important;
+}

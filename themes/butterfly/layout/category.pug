@@ -1,6 +1,18 @@
 extends includes/layout.pug
 
 block content
+  //- 获取当前分类的所有直接子分类
+  -
+    var currentCategory = page.category;
+    var subCategories = [];
+    if (currentCategory) {
+      site.categories.forEach(cat => {
+        if (cat.parent && cat.parent.name === currentCategory) {
+          subCategories.push(cat);
+        }
+      });
+    }
+
   if theme.category_ui == 'index'
     include ./includes/mixins/indexPostUI.pug
     +indexPostUI
@@ -8,5 +20,17 @@ block content
     include ./includes/mixins/article-sort.pug
     #category
       .article-sort-title= _p('page.category') + ' - ' + page.category
+
+      //- 如果有子分类，显示子分类导航条
+      if subCategories.length > 0
+        .category-subnav
+          span.subnav-label 子分类：
+          each subCat in subCategories
+            a.subnav-link(href=url_for(subCat.path))
+              = subCat.name
+              span.count ({{subCat.length}})
+          //- 也可以加一个“全部”链接，返回当前分类的全部文章
+          a.subnav-link(href=url_for(page.path)) 全部
+
       +articleSort(page.posts)
       include includes/pagination.pug

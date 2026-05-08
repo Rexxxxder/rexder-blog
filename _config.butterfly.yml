@@ -18,8 +18,16 @@ nav:
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  同人绘画: /categories/同人/同人·绘画/ || fas fa-paintbrush
+  同人文章: /categories/同人/同人·文章/ || fas fa-file-alt
+  原创绘画: /categories/原创/原创·绘画/ || fas fa-paintbrush
+  原创文章: /categories/原创/原创·文章/ || fas fa-file-alt
+  思索: /categories/思索/ || fas fa-brain
+  灵感笔记: /categories/灵感笔记/ || fas fa-lightbulb
+  企划进程: /categories/企划/ || fas fa-chart-line
+  随笔: /categories/随笔/ || fas fa-book
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
 
@@ -56,8 +64,8 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
-  effect: false
+  img: /images/koham icon.jpg
+  # effect: true
 
 # Disable all banner images
 disable_top_img: false
@@ -1058,7 +1066,7 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/custom.css">
   bottom:
     # - <script src="xxxx"></script>
 
